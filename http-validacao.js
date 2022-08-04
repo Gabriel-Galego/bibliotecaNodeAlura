@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 
 function manejaErros(erro) {
   throw new Error(erro.message);
@@ -36,4 +36,4 @@ async function validaUrls(arrayLinks) {
   return resultados;
 }
 
-export default validaUrls;
+module.exports = validaURLs;
